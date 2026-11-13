@@ -1,0 +1,6 @@
+{
+  "name": "VetGroom - Estúdio de Grooming & Cuidados Veterinários",
+  "description": "Estúdio de grooming de alto padrão e cuidados veterinários integrados. Onde a saúde encontra carinho e estilo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

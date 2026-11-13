@@ -1,0 +1,15 @@
+node_modules/
+build/
+dist/
+coverage/
+.aistudio/
+.DS_Store
+*.log
+.env*
+!.env.example
+public/assets/aistudio/Logo_Vetgroom-02_*.svg
+public/assets/aistudio/Logo_Vetgroom-03_*.svg
+public/assets/aistudio/Logo_Vetgroom-05_*.svg
+public/assets/aistudio/Logo_Vetgroom-06_*.svg
+public/assets/aistudio/Manual_de_Identidade_Visual__-_T_cnico_*.pdf
+public/assets/aistudio/WhatsApp_Image_*.jpeg

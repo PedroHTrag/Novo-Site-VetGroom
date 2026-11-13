@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+/*
+=============================================================================
+VETGROOM - BRAND DESIGN SYSTEM TOKENS (BrandBook 2025-2026)
+=============================================================================
+
+1. PALETA DE CORES (HEX EXATOS EXTRAÍDOS DO BRANDBOOK):
+   - Terracota (Primária de Afeto): #9F5E48  (Fundo claro e destaque emocional)
+   - Marrom Escuro (Primária Nobre): #442F2D  (Tipografia principal, sofisticação e autoridade)
+   - Bege Suave (Acolhimento):       #F3DABE  (Contrastes quentes, botões e cartões especiais)
+   - Bege Background:                #FAF6F0  (Fundo geral do site, aconchegante)
+   - Bege Card:                      #F5EFEB  (Fundo de cartões secundários e módulos)
+   - Fendi / Warm Grey:              #C8C1B5  (Divisórias, contornos sutis e textos neutros)
+   - Grafite Preto:                  #1F1F1F  (Versão monocromática de alto contraste)
+   - Branco Puro:                    #FFFFFF  (Respiros de luz e cartões em destaque)
+
+2. TIPOGRAFIA:
+   - Display / Títulos: 'Outfit', sans-serif
+   - Leitura / Interface: 'Plus Jakarta Sans', system-ui, sans-serif
+   - Escala Tipográfica:
+     * H1: 40px - 52px (desktop), leading-tight, tracking-tight
+     * H2: 28px - 38px, leading-snug
+     * H3: 20px - 26px, leading-normal
+     * H4: 16px - 20px, font-semibold
+     * Corpo de texto: 15px - 16px, line-height 1.65 (alta legibilidade)
+     * Legenda / Microcopy: 12px - 13px, font-medium, tracking-wide
+
+3. RAIOS DE BORDA:
+   - radius-sm: 8px
+   - radius-md: 16px
+   - radius-lg: 24px
+   - radius-xl: 32px
+   - radius-full: 9999px (Pills para botões e badges de alta sofisticação)
+
+4. ESPAÇAMENTOS & RITMO:
+   - Padding de seção: 5rem (80px) a 8rem (128px)
+   - Containers: max-w-7xl mx-auto px-4 sm:px-6 lg:px-8
+   - Grid: composições assimétricas e recortes orgânicos
+=============================================================================
+*/
+
+@theme {
+  --color-vg-terracota: #9F5E48;
+  --color-vg-marrom: #442F2D;
+  --color-vg-bege-suave: #F3DABE;
+  --color-vg-bege-bg: #FAF6F0;
+  --color-vg-bege-card: #F5EFEB;
+  --color-vg-fendi: #C8C1B5;
+  --color-vg-preto: #1F1F1F;
+  --color-vg-branco: #FFFFFF;
+
+  --font-display: 'Outfit', sans-serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+}
+
+:root {
+  --vg-terracota: #9F5E48;
+  --vg-marrom: #442F2D;
+  --vg-bege-suave: #F3DABE;
+  --vg-bege-bg: #FAF6F0;
+  --vg-bege-card: #F5EFEB;
+  --vg-fendi: #C8C1B5;
+  --vg-preto: #1F1F1F;
+  --vg-branco: #FFFFFF;
+}
+
+html {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  color: #442F2D;
+  background-color: #FAF6F0;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Organic smooth curves and subtle transitions */
+::selection {
+  background-color: #F3DABE;
+  color: #442F2D;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
